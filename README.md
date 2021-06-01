@@ -1,13 +1,13 @@
-#Python-Programming-Capstone-Project
+# Python-Programming-Capstone-Project
 
-##Project-Goals
+## Project-Goals
 - Working with APIs to get and assess data
 - Store information in a Database (MySQL)
 
-##Analyzing the tone of tweets
+## Analyzing the tone of tweets
 This project uses the tweepy module to get tweets and the Tone Analyzer from IBMs watson module to analyze the tone of the tweets
 
-##API-Documentation
+## API-Documentation
 [IBM Cloud Creating Resources](https://cloud.ibm.com/docs/account?topic=account-manage_resource)
 [IBM Tone Analyzer](https://cloud.ibm.com/apidocs/tone-analyzer?code=python#tone)
 [Tweepy](https://docs.tweepy.org/en/v3.10.0/install.html)

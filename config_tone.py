@@ -7,7 +7,6 @@ def create_ibm_api():
     # fetch virtual environment variables
     IAM_IDENTITY_KEY = os.environ['IAM_IDENTITY_KEY']
     URL = os.environ['URL']
-
     # authenticate
     authenticator = IAMAuthenticator(IAM_IDENTITY_KEY)
     tone_analyzer = ToneAnalyzerV3(version='2017-09-21', authenticator=authenticator)

@@ -7,7 +7,7 @@ from config_twitter import create_twitter_api
 from config_tone import create_ibm_api, tone_data
 
 def query_params():
-    # specify search arguments for tweepy tweet query
+    # specify search arguments for tweepy tweets query
     while True:
         try:
             the_date = datetime.now()

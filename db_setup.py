@@ -1,11 +1,8 @@
-import os
+from config_db import db_connect
 import sqlalchemy
 
 # create connection to DB to store tweets in
-mysql_pass = os.environ['MYSQL_PASS']
-engine = sqlalchemy.create_engine(f'mysql+pymysql://root:{mysql_pass}@localhost/TwitterDB')
-connection = engine.connect()
-metadata = sqlalchemy.MetaData()
+engine, connection, metadata = db_connect()
 
 # create tables into which tweets will be stored in DB
 user_table = sqlalchemy.Table(
@@ -24,7 +21,7 @@ tweet_table = sqlalchemy.Table(
     sqlalchemy.Column('retweet_truncated', sqlalchemy.String(500)),
     sqlalchemy.Column('full_text', sqlalchemy.String(500)),
     sqlalchemy.Column('is_retweet', sqlalchemy.Boolean()),
-    sqlalchemy.Column('tweet_tone', sqlalchemy.String(50))
+    sqlalchemy.Column('tweet_tone', sqlalchemy.String(250))
     )
 
 metadata.create_all(engine)

@@ -14,4 +14,4 @@ This project uses the tweepy module to get tweets and the Tone Analyzer from IBM
 
  **You need to create the cloud resource and use the credentials that are generated upon creation (API key and endpoint URL) first, on your IBM cloud account**
 
-**If you just generate an API key, you'll get a `403: Forbidden` error**
+**If you just generate an API key and use that in your script, without creating the resource, you'll get a `403: Forbidden` error**
